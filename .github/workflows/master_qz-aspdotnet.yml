@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - qz-aspdotnet
+name: Build and deploy ASP.Net Core app to Azure Web App - QZ-aspdotnet
 
 on:
   push:
@@ -51,7 +51,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'qz-aspdotnet'
+          app-name: 'QZ-aspdotnet'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A3E65F01799A4DDAABD889FC619F8A64 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_533FD81E852344CD8392197D9C0908D6 }}
           package: .
